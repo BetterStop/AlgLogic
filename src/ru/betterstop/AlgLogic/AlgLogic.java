@@ -9,5 +9,10 @@ public class AlgLogic {
         System.out.println(and.getOut());
         System.out.println();
 
+        And and2 = new And(new And(1, new And(1, 1)), new And(1, 1));
+        System.out.println("and2 " + and2.getOut());
+
+
+
     }
 }
