@@ -9,8 +9,12 @@ public class AlgLogic {
         System.out.println(and.getOut());
         System.out.println();
 
-        And and2 = new And(new And(1, new And(1, 1)), new And(1, 1));
+        And and2 = new And(new And(1, new And(1, 1)), new Or(1, 0));
         System.out.println("and2 " + and2.getOut());
+        Or or = new Or(1, 2);
+
+        LogElement lE = new And(new And(0, 1), new Or(1, 0));
+        System.out.println(lE.getOut());
 
 
 
