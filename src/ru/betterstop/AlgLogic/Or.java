@@ -20,7 +20,7 @@ public class Or extends LogElement{
 
     protected void run(){
         super.run();
-        out = in1 || in2;
+        setOut(getIn1() || getIn2());
     }
 
 

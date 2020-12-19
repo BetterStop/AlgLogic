@@ -2,9 +2,9 @@ package ru.betterstop.AlgLogic;
 
 public class LogElement {
 // предок для всех логических элементов
-    protected boolean out;
-    protected boolean in1;
-    protected boolean in2;
+    private boolean out;
+    private boolean in1;
+    private boolean in2;
     protected LogElement prev1;
     protected LogElement prev2;
 
@@ -40,8 +40,20 @@ public class LogElement {
         run();
     }
 
+    public void setOut(boolean o){
+        out = o;
+    }
+
     public int getOut(){
         return out ? 1 : 0;
+    }
+
+    public boolean getIn1(){
+        return in1;
+    }
+
+    public boolean getIn2(){
+        return in2;
     }
 
     protected void run(){

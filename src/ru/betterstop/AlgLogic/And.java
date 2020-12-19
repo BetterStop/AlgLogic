@@ -4,8 +4,9 @@ package ru.betterstop.AlgLogic;
 public class And extends LogElement{
 
     public And(){
-        out = false;
-        run();
+        super();
+        //out = false;
+       // run();
     }
 
     public And(LogElement p1, LogElement p2) {
@@ -39,7 +40,7 @@ public class And extends LogElement{
 
     protected void run(){
        super.run();
-       out = in1 && in2;
+       setOut(getIn1() && getIn2());
     }
 
 

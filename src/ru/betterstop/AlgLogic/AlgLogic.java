@@ -13,7 +13,7 @@ public class AlgLogic {
         System.out.println("and2 " + and2.getOut());
         Or or = new Or(1, 2);
 
-        LogElement lE = new And(new And(0, 1), new Or(1, 0));
+        LogElement lE = new And(new And(1, 1), new Or(0, 1));
         System.out.println(lE.getOut());
 
 
