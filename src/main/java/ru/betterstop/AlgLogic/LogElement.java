@@ -63,7 +63,11 @@ public class LogElement {
         if (prev2 != null){
             in2 = prev2.getOut() == 1;
         }
-
     }
 
+    @Override
+    public String toString(){
+        if (out) return "1";
+        return "0";
+    }
 }
