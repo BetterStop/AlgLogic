@@ -2,6 +2,10 @@ package ru.betterstop.AlgLogic;
 // логический элемент "Или"
 public class Or extends LogElement{
 
+    public Or(){
+        super();
+    }
+
     public Or(int i, int i1) {
         super(i, i1);
     }

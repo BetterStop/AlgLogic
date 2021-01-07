@@ -15,28 +15,28 @@ public class LogElement {
         run();
     }
 
-    public LogElement(LogElement l1, LogElement l2){
-        prev1 = l1;
-        prev2 = l2;
+    public LogElement(LogElement prev1, LogElement prev2){
+        this.prev1 = prev1;
+        this.prev2 = prev2;
         run();
     }
 
-    public LogElement(int i1, int i2){
-        in1 = i1 == 1;
-        in2 = i2 == 1;
+    public LogElement(int in1, int in2){
+        this.in1 = in1 == 1;
+        this.in2 = in2 == 1;
         out = true;
         run();
     }
 
-    public LogElement(LogElement p1, int i2) {
-        prev1 = p1;
-        in2 = i2 == 1;
+    public LogElement(LogElement prev1, int in2) {
+        this.prev1 = prev1;
+        this.in2 = in2 == 1;
         run();
     }
 
-    public LogElement(int i1, LogElement p2) {
-        in1 = i1 == 1;
-        prev2 = p2;
+    public LogElement(int in1, LogElement prev2) {
+        this.in1 = in1 == 1;
+        this.prev2 = prev2;
         run();
     }
 
