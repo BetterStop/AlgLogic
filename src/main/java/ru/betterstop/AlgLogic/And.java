@@ -4,23 +4,23 @@ package ru.betterstop.AlgLogic;
 public class And extends LogElement{
 
     public And(){
-        super();
+
     }
 
-    public And(LogElement p1, LogElement p2) {
-        super(p1, p2);
+    public And(LogElement prev1, LogElement prev2) {
+        super(prev1, prev2);
     }
 
-    public And(int i1, LogElement p2) {
-        super(i1, p2);
+    public And(int in1, LogElement prev2) {
+        super(in1, prev2);
      }
 
-    public And(LogElement p1, int i2) {
-        super(p1, i2);
+    public And(LogElement prev1, int in2) {
+        super(prev1, in2);
     }
 
-    public And(int i1, int i2){
-        super(i1, i2);
+    public And(int in1, int in2){
+        super(in1, in2);
     }
 
     protected void run(){

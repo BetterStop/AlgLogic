@@ -3,23 +3,23 @@ package ru.betterstop.AlgLogic;
 public class Or extends LogElement{
 
     public Or(){
-        super();
+
     }
 
-    public Or(int i, int i1) {
-        super(i, i1);
+    public Or(int in1, int in2) {
+        super(in1, in2);
     }
 
-    public Or(LogElement p1, LogElement p2) {
-        super(p1, p2);
+    public Or(LogElement prev1, LogElement prev2) {
+        super(prev1, prev2);
     }
 
-    public Or(int i1, LogElement p2) {
-        super(i1, p2);
+    public Or(int in1, LogElement prev2) {
+        super(in1, prev2);
     }
 
-    public Or(LogElement p1, int i2) {
-        super(p1, i2);
+    public Or(LogElement prev1, int in2) {
+        super(prev1, in2);
     }
 
     protected void run(){

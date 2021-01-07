@@ -1,12 +1,12 @@
 package ru.betterstop.AlgLogic;
 
 public class Not extends LogElement{
-    public Not(int i) {
-        super(i, i);
+    public Not(int in) {
+        super(in, in);
     }
 
-    public Not(LogElement p1) {
-        super(p1, p1);
+    public Not(LogElement prev1) {
+        super(prev1, prev1);
     }
 
     protected void run(){
