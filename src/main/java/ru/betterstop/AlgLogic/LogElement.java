@@ -1,6 +1,6 @@
 package ru.betterstop.AlgLogic;
 
-public class LogElement {
+public abstract class LogElement {
 // предок для всех логических элементов
     private boolean out;
     private boolean in1;
