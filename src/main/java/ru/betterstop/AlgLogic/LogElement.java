@@ -70,4 +70,24 @@ public abstract class LogElement {
         if (out) return "1";
         return "0";
     }
+
+    @Override
+    public boolean equals(Object obj){
+        if (this == obj) return true;
+        if (obj == null || this.getClass() != obj.getClass()) return false;
+        LogElement logElement = (LogElement) obj;
+        return logElement.getIn1() == this.getIn1()
+                && logElement.getIn2() == this.getIn2()
+                && logElement.getOut() == this.getOut();
+    }
+
+    @Override
+    public int hashCode(){
+        final int hash = 3;
+        int result = 1;
+        result = hash * result + Boolean.hashCode(in1);
+        result = hash * result + Boolean.hashCode(in2);
+        result = hash * result + Boolean.hashCode(out);
+        return result;
+    }
 }
