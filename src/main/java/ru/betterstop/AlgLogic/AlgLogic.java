@@ -29,6 +29,8 @@ public class AlgLogic {
         System.out.println(no2.hashCode());
         System.out.println(no1.equals(lE));
         System.out.println(or.equals(or2));
+        
+        System.out.println("Test Git Branch");
 
 
 
