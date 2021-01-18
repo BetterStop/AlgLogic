@@ -5,15 +5,8 @@ public abstract class LogElement {
     private boolean out;
     private boolean in1;
     private boolean in2;
-    protected LogElement prev1;
-    protected LogElement prev2;
-
-    public LogElement(){
-        out = false;
-        in1 = false;
-        in2 = false;
-        run();
-    }
+    private LogElement prev1;
+    private LogElement prev2;
 
     public LogElement(LogElement prev1, LogElement prev2){
         this.prev1 = prev1;

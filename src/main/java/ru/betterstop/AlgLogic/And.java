@@ -3,10 +3,6 @@ package ru.betterstop.AlgLogic;
 // логический элемент "И"
 public class And extends LogElement{
 
-    public And(){
-
-    }
-
     public And(LogElement prev1, LogElement prev2) {
         super(prev1, prev2);
     }
